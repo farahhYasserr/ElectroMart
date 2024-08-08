@@ -1,0 +1,161 @@
+﻿@model ProductsCategoriesVM
+@using X.PagedList;
+@using X.Web.PagedList
+<style>
+    /* Sidebar container */
+/* Sidebar container */
+    .nav-link.active {
+        font-weight: bold;
+        color: #007bff; /* Adjust the color as needed */
+    }
+.sidebar {
+    background-color: #f8f9fa;
+    border-radius: .375rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* For modern browsers */
+    top: 1rem; /* Adjust the top position as needed */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allows vertical scrolling if content overflows */
+}
+
+/* Sidebar title */
+.sidebar-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar list items */
+.sidebar-list {
+    padding-left: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: .5rem;
+}
+
+.sidebar-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+.sidebar-link:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Main content container */
+.main-content {
+    margin-left: 0; /* No margin for fixed sidebar */
+}
+
+    /* Card container */
+    .card {
+        max-width: 200px; /* Adjust as needed */
+        margin: auto; /* Center the card */
+    }
+
+    /* Product image */
+    .card-img-top {
+        width: 100%; /* Full width of the card */
+        height: 150px; /* Adjust the height */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    /* Card body */
+    .card-body {
+        padding: .5rem; /* Reduce padding */
+    }
+
+        /* Product name */
+        .card-body .fw-bolder {
+            font-size: 1rem; /* Adjust font size */
+        }
+
+        /* Product price */
+        .card-body .price {
+            font-size: .875rem; /* Adjust font size */
+        }
+
+    /* Card footer */
+    .card-footer {
+        padding: .5rem; /* Reduce padding */
+    }
+
+  
+
+
+
+</style>
+
+
+<section >
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5">
+            <!-- Sidebar -->
+            <div class="col-md-3 mb-5">
+                <div class="sidebar bg-light p-4 rounded">
+                    <h4 class="sidebar-title">Categories</h4>
+                    <ul class="sidebar-list list-unstyled mb-0">
+                        <!-- Example categories -->
+                        <li><a class="nav-link @(ViewBag.categoryId == 0? "active" : "")" href="/Customer/Home/Index">All </a></li>
+
+                        @foreach(var category in Model.categories){
+                            <li><a class="nav-link @(ViewBag.categoryId == category.Id? "active" : "")" href="/Customer/Home/Index?categoryId=@category.Id">@category.Name</a></li>
+                        }
+                        <!-- Add more categories as needed -->
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Main content -->
+            <div class="col-md-9 main-content">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    @foreach (var item in Model.Products)
+                    {
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <a asp-action="ProductDetails" asp-route-Id="@item.Id">
+                                    <img class="card-img-top" src="~/@item.Img" alt="..." />
+                                </a>
+                                <!-- Product details-->
+                                <div class="card-body ">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">@item.Name</h5>
+                                        <!-- Product price-->
+                                        <p class="price">$@item.Price</p>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center">
+                                        <a asp-action="ProductDetails" asp-route-Id="@item.Id" class="btn btn-outline-dark mt-auto">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                  
+                </div>
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        @Html.PagedListPager((IPagedList)Model.Products, page => Url.Action("Index", new { page = page }),
+                                 new PagedListRenderOptions
+                        {
+                            LiElementClasses = new string[] { "page-item" },
+                            PageClasses = new string[] { "page-link" }
+                        })
+                    </div>
+                </div>
+             
+                <br />
+            </div>
+        </div>
+    </div>
+</section>

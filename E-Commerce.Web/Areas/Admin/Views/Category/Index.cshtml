@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.PageTitle = "Category Management";
+    ViewBag.CardTitle = "View Categories";
+
+}
+
+<table id="myTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Date Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+<div>
+    <a class="btn btn-primary" href="/Admin/Category/Create">Create</a>
+</div>
+
+@section Scripts {
+    <script src="~/js/Categories.js"></script>
+}

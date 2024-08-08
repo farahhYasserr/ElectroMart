@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.PageTitle = "Users Management";
+    ViewBag.CardTitle = "View Users";
+}
+<div>
+    <a class="btn btn-primary" href="/Identity/Account/Register">Create User</a>
+</div>
+
+<br />
+<table id="myTable" class="table table-hover" width="100%">
+    <thead class="text-bold">
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>City</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+</table>
+
+@section Scripts {
+    <script src="~/js/users.js"></script>
+}

@@ -1,0 +1,12 @@
+D:\ASP.NET\E-Commerce\Utilities\bin\Debug\net8.0\E-commerce.Utilities.deps.json
+D:\ASP.NET\E-Commerce\Utilities\bin\Debug\net8.0\E-commerce.Utilities.dll
+D:\ASP.NET\E-Commerce\Utilities\bin\Debug\net8.0\E-commerce.Utilities.pdb
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.csproj.AssemblyReference.cache
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.AssemblyInfoInputs.cache
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.AssemblyInfo.cs
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.csproj.CoreCompileInputs.cache
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.dll
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\refint\E-commerce.Utilities.dll
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\E-commerce.Utilities.pdb
+D:\ASP.NET\E-Commerce\Utilities\obj\Debug\net8.0\ref\E-commerce.Utilities.dll

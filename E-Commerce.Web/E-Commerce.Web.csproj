@@ -1,0 +1,158 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>E_Commerce.Web</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="wwwroot\assets\**" />
+	  <Compile Remove="wwwroot\wwwroot\**" />
+	  <Content Remove="wwwroot\assets\**" />
+	  <Content Remove="wwwroot\wwwroot\**" />
+	  <EmbeddedResource Remove="wwwroot\assets\**" />
+	  <EmbeddedResource Remove="wwwroot\wwwroot\**" />
+	  <None Remove="wwwroot\assets\**" />
+	  <None Remove="wwwroot\wwwroot\**" />
+	  <TypeScriptCompile Remove="wwwroot\assets\**" />
+	  <TypeScriptCompile Remove="wwwroot\wwwroot\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.5.3">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+		<PackageReference Include="Stripe.net" Version="45.7.0-beta.1" />
+		<PackageReference Include="X.PagedList.Mvc.Core" Version="10.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Controllers\" />
+		<Folder Include="wwwroot\Images\Products\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
+	  <None Include="wwwroot\customer\css\style.css.map" />
+	  <None Include="wwwroot\customer\customer\js\scripts.js" />
+	  <None Include="wwwroot\customer\fonts\ElegantIcons.svg" />
+	  <None Include="wwwroot\customer\fonts\fontawesome-webfont.svg" />
+	  <None Include="wwwroot\customer\fonts\fontawesome-webfont.woff2" />
+	  <None Include="wwwroot\customer\js\bootstrap.min.js" />
+	  <None Include="wwwroot\customer\js\jquery-3.3.1.min.js" />
+	  <None Include="wwwroot\customer\js\jquery.countdown.min.js" />
+	  <None Include="wwwroot\customer\js\jquery.magnific-popup.min.js" />
+	  <None Include="wwwroot\customer\js\jquery.nice-select.min.js" />
+	  <None Include="wwwroot\customer\js\jquery.nicescroll.min.js" />
+	  <None Include="wwwroot\customer\js\jquery.slicknav.js" />
+	  <None Include="wwwroot\customer\js\main.js" />
+	  <None Include="wwwroot\customer\js\mixitup.min.js" />
+	  <None Include="wwwroot\customer\js\owl.carousel.min.js" />
+	  <None Include="wwwroot\customer\js\scripts.js" />
+	  <None Include="wwwroot\customer\sass\style.scss" />
+	  <None Include="wwwroot\customer\sass\_about.scss" />
+	  <None Include="wwwroot\customer\sass\_base.scss" />
+	  <None Include="wwwroot\customer\sass\_blog-details.scss" />
+	  <None Include="wwwroot\customer\sass\_blog-sidebar.scss" />
+	  <None Include="wwwroot\customer\sass\_blog.scss" />
+	  <None Include="wwwroot\customer\sass\_breadcrumb.scss" />
+	  <None Include="wwwroot\customer\sass\_checkout.scss" />
+	  <None Include="wwwroot\customer\sass\_contact.scss" />
+	  <None Include="wwwroot\customer\sass\_footer.scss" />
+	  <None Include="wwwroot\customer\sass\_header.scss" />
+	  <None Include="wwwroot\customer\sass\_hero.scss" />
+	  <None Include="wwwroot\customer\sass\_home-page.scss" />
+	  <None Include="wwwroot\customer\sass\_mixins.scss" />
+	  <None Include="wwwroot\customer\sass\_product.scss" />
+	  <None Include="wwwroot\customer\sass\_responsive.scss" />
+	  <None Include="wwwroot\customer\sass\_shop-details.scss" />
+	  <None Include="wwwroot\customer\sass\_shop.scss" />
+	  <None Include="wwwroot\customer\sass\_shopping-cart.scss" />
+	  <None Include="wwwroot\customer\sass\_variable.scss" />
+	  <None Include="wwwroot\customer\Source\bootstrap-4.2.1-dist.zip" />
+	  <None Include="wwwroot\customer\Source\elegant_font.zip" />
+	  <None Include="wwwroot\customer\Source\font-awesome-4.7.0.zip" />
+	  <None Include="wwwroot\customer\Source\jquery-nice-select-1.1.0.zip" />
+	  <None Include="wwwroot\customer\Source\Magnific-Popup-master.zip" />
+	  <None Include="wwwroot\customer\Source\OwlCarousel2-2.3.4.zip" />
+	  <None Include="wwwroot\customer\Source\SlickNav-master.zip" />
+	  <None Include="wwwroot\js\site.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+	  <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+	  <None Include="wwwroot\lib\bootstrap\LICENSE" />
+	  <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+	  <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+	  <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+	  <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+	  <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+	  <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+	  <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+	  <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+	  <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+	  <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\E-Commerce.DataAccess\E-Commerce.DataAccess.csproj" />
+		<ProjectReference Include="..\Utilities\E-commerce.Utilities.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="Areas\Identity\Pages\Account\Login.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	  <Content Update="Areas\Identity\Pages\Account\Register.cshtml">
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
+	</ItemGroup>
+
+</Project>

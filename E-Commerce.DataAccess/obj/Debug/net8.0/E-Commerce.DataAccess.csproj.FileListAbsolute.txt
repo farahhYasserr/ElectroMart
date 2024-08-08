@@ -1,0 +1,17 @@
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.DataAccess.deps.json
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.DataAccess.runtimeconfig.json
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.DataAccess.dll
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.DataAccess.pdb
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.Entities.dll
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\bin\Debug\net8.0\E-Commerce.Entities.pdb
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.csproj.AssemblyReference.cache
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.AssemblyInfoInputs.cache
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.AssemblyInfo.cs
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.csproj.CoreCompileInputs.cache
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.csproj.CopyComplete
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.dll
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\refint\E-Commerce.DataAccess.dll
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.pdb
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\E-Commerce.DataAccess.genruntimeconfig.cache
+D:\ASP.NET\E-Commerce\E-Commerce.DataAccess\obj\Debug\net8.0\ref\E-Commerce.DataAccess.dll
